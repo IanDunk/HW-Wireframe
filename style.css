@@ -32,15 +32,18 @@ section {
 
 #full {
     float: left;
+    overflow: auto;
     width: 60%;
     background: #eee;
 }
 
 article {
     clear: both;
-    height: 200px;
+    overflow: auto;
+    height: 300px;
     padding: 20px;
     margin-top: 20px;
+    color: #eee;
     background: #777;
     border: 1px solid #eee;
 }
@@ -53,6 +56,7 @@ h1 {
 }
 
 p {
+    clear: both;
     padding: 20px;
     color: #333;
     background: #ccc;
@@ -61,16 +65,20 @@ p {
 aside {
     padding: 20px;
     float: right;
-    width: 35%;
+    width: 40%;
     color: #333;
-    background: #ccc;
+    background: #eee;
+    /* what was that "equal height hack" again? */
+    /* Also how to separate? */
 }
 
 footer {
     padding: 20px;
     clear: both;
+    float: bottom;
     color: #333;
     background: #ccc;
+    /* margin-bottom: 20px; ? */
 }
 
 
