@@ -4,6 +4,11 @@
     background: #777
 }
 
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
 body {
     font-size: 24px;
     line-height: 32px;
@@ -12,6 +17,7 @@ body {
 
 header {
     padding: 20px;
+    margin-top: 20px;
     margin-bottom: 20px;
     color: #333;
     background: #ccc;
@@ -26,6 +32,7 @@ nav {
 
 section {
     padding: 20px;
+    margin-bottom: 20px;
     color: #333;
     background: #ccc;
 }
@@ -35,12 +42,13 @@ section {
     overflow: auto;
     width: 60%;
     background: #eee;
+    margin-right: 20px;
 }
 
 article {
     clear: both;
     overflow: auto;
-    height: 300px;
+    height: 255px;
     padding: 20px;
     margin-top: 20px;
     color: #eee;
@@ -51,6 +59,7 @@ article {
 h1 {
     float: down;
     padding: 20px;
+    margin-top: 20px;
     color: #333;
     background: #ccc;
 }
@@ -60,16 +69,15 @@ p {
     padding: 20px;
     color: #333;
     background: #ccc;
+    margin-top: 20px;
 }
 
 aside {
     padding: 20px;
     float: right;
-    width: 40%;
+    width: 37%;
     color: #333;
     background: #eee;
-    /* what was that "equal height hack" again? */
-    /* Also how to separate? */
 }
 
 footer {
@@ -78,7 +86,13 @@ footer {
     float: bottom;
     color: #333;
     background: #ccc;
-    /* margin-bottom: 20px; ? */
 }
 
+.clearfix {
+    overflow: auto;
+}
+
+section, aside {
+    height: 350px;
+}
 
